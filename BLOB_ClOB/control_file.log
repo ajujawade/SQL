@@ -1,0 +1,64 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Mar 13 12:56:12 2024
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   control_file.txt
+Data File:      data_file.txt
+  Bad File:     data_file.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TOUR_INFO, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+SR_NO                               FIRST     *   ,       CHARACTER            
+PLACE_NAME                           NEXT     *   ,       CHARACTER            
+PLACE_DETAILS_FILE_NAME              NEXT   100   ,       CHARACTER            
+  (FILLER FIELD)
+PLACE_DETAILS                     DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field PLACE_DETAILS_FILE_NAME
+IMAGE1_FILE_NAME                     NEXT   100   ,       CHARACTER            
+  (FILLER FIELD)
+PLACE_IMAGE_1                     DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field IMAGE1_FILE_NAME
+IMAGE2_FILE_NAME                     NEXT   100   ,       CHARACTER            
+  (FILLER FIELD)
+PLACE_IMAGE_2                     DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field IMAGE2_FILE_NAME
+IMAGE3_FILE_NAME                     NEXT   100   ,       CHARACTER            
+  (FILLER FIELD)
+PLACE_IMAGE_3                     DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field IMAGE3_FILE_NAME
+
+
+Table TOUR_INFO:
+  1 Row successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  59136 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             1
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Mar 13 12:56:12 2024
+Run ended on Wed Mar 13 12:56:12 2024
+
+Elapsed time was:     00:00:00.10
+CPU time was:         00:00:00.00
